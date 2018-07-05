@@ -302,11 +302,11 @@ package coco.core {
 			rendererCurrentTime = getTimer() - startTime;
 			rendererTotalTime += rendererCurrentTime;
 			
-			CocoUI.coco::montior("[RendererTime:" + rendererCurrentTime +
+			/*CocoUI.coco::montior("[RendererTime:" + rendererCurrentTime +
 					'ms] [TotalRendererTime:' + rendererTotalTime +
 					'ms] [TotalInstanceNum:' + CocoUI.coco::instanceCounter +
 					'] [TotalMemory:' + (System.totalMemory / 1024).toFixed() +
-					'KB] [FreeMemory:' + (System.freeMemory / 1024).toFixed() + 'KB]');
+					'KB] [FreeMemory:' + (System.freeMemory / 1024).toFixed() + 'KB]');*/
 			
 			// now invalidate flag false
 			invalidateCallLaterFlag = false;

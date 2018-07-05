@@ -187,9 +187,9 @@ package coco.util
 		/**
 		 * 是否使用性能监控 
 		 */		
-		public static var useMonitor:Boolean = false;
+		/*public static var useMonitor:Boolean = false;*/
 		
-		coco static function montior(...args):void
+		/*coco static function montior(...args):void
 		{
 			if (useMonitor)
 			{
@@ -198,7 +198,7 @@ package coco.util
 					arg[0] = "[cocoui" + CocoUI.VERSION + "][Monitor]: " + arg[0];
 				trace(arg);
 			}
-		}
+		}*/
 		
 		//--------------------------------------------------------------------------------------------------------------------------
 		//

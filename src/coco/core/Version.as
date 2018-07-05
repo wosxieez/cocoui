@@ -7,6 +7,17 @@ import coco.core.coco;
 //--------------------------------------------------------------------------------------------------------------------------
 
 /**
+ * Version 4.2.2
+ * 1 修复TileLayout rowCount Bug
+ * 2 删除 性能监控项
+ */
+
+/**
+ * Version 4.2.1
+ * 1 修复UIComponent x y 属性bug
+ */
+
+/**
  * Version 4.2.0
  * 1 Use cocolib.swz
  */
@@ -83,11 +94,7 @@ import coco.core.coco;
  * 4 修改 全新的布局机制
  */
 
-/**
- * Version 4.2.1
- * 1 修复UIComponent x y 属性bug
- */
-coco static const VERSION:String = "4.2.1";
+coco static const VERSION:String = "4.2.2";
 
 
 /**

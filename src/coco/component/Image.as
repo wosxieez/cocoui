@@ -9,14 +9,12 @@ package coco.component
     import flash.geom.Point;
     import flash.geom.Rectangle;
     import flash.net.URLRequest;
+    import flash.system.LoaderContext;
     
     import coco.core.UIComponent;
     import coco.manager.CacheManager;
     import coco.util.CocoUI;
     import coco.util.debug;
-	
-	import flash.system.LoaderContext;
-	import flash.system.SecurityDomain;
 	
 	/**
      * 缓存图片  

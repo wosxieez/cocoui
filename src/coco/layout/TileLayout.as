@@ -77,8 +77,8 @@ package coco.layout
 		
 		public function set rowCount(value:int):void
 		{
-			if (rowCount == value) return;
-			rowCount = value;
+			if (_rowCount == value) return;
+			_rowCount = value;
 			if (layoutView)
 				layoutView.invalidateDisplayList();
 		}

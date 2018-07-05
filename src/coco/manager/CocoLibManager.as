@@ -1,10 +1,5 @@
 package coco.manager {
 	
-	import coco.core.Application;
-	import coco.core.coco;
-	import coco.util.CocoUI;
-	import coco.util.core;
-	
 	import flash.display.Loader;
 	import flash.events.Event;
 	import flash.events.IOErrorEvent;
@@ -17,11 +12,17 @@ package coco.manager {
 	import flash.utils.ByteArray;
 	import flash.utils.getDefinitionByName;
 	
+	import coco.core.Application;
+	import coco.core.coco;
+	import coco.util.CocoUI;
+	import coco.util.core;
+	
 	/**
 	 *
 	 * CocoLibManager
 	 *
 	 * */
+	[ExcludeClass]
 	public class CocoLibManager {
 		
 		public function CocoLibManager() {
