@@ -1,4 +1,4 @@
-# [COCOUI](http://hefeixiaomu.com/) &middot; [!GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+# [COCOUI](http://hefeixiaomu.com/)
 
 cocoui is a actionscript library for building user interfaces.
 
