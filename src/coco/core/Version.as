@@ -94,9 +94,6 @@ import coco.core.coco;
  * 4 修改 全新的布局机制
  */
 
-coco static const VERSION:String = "4.2.2";
-
-
 /**
  * Version 3.0.4</br>
  * 1 优化 Label组件，支持更多属性</br>
@@ -130,3 +127,5 @@ coco static const VERSION:String = "4.2.2";
  * 2 List - Support 'displayItemRendererFull' property
  * 3 DefaultItemRenderer - label text clear when data is null
  */
+
+coco static const VERSION:String = "4.2.2";
