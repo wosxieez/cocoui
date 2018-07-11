@@ -1,13 +1,10 @@
-# COCOUI Framework
+# [COCOUI](http://hefeixiaomu.com/) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]
 
-  > cocoui是一个基于as3的组件框架
+cocoui is a actionscript library for building user interfaces.
 
+## Examples
 
-
-  `使用Demo`
-
-```actionscript
-
+```jsx
 package
 {
 	import coco.component.Button;
@@ -31,8 +28,11 @@ package
 		
 	}
 }
-  
 ```
+
+### License
+
+COCOUI is [MIT licensed](./LICENSE).
 
   ​
 

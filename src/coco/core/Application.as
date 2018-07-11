@@ -1,22 +1,25 @@
+/**
+ * Copyright (c) 2014-present, ErZhuan(coco) Xie
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 package coco.core {
+	import flash.display.DisplayObject;
+	import flash.display.StageAlign;
+	import flash.display.StageScaleMode;
+	import flash.events.Event;
+	import flash.utils.getTimer;
+	
 	import coco.component.SkinComponent;
 	import coco.core.popup.ApplicationContent;
 	import coco.core.popup.ApplicationPopUp;
 	import coco.manager.AnimationManager;
 	import coco.manager.CocoLibManager;
 	import coco.manager.PopUpManager;
-	import coco.util.CocoUI;
 	import coco.util.DPIUtil;
 	import coco.util.Platform;
 	import coco.util.core;
-	import coco.core.coco;
-	
-	import flash.display.DisplayObject;
-	import flash.display.StageAlign;
-	import flash.display.StageScaleMode;
-	import flash.events.Event;
-	import flash.system.System;
-	import flash.utils.getTimer;
 	
 	use namespace coco;
 	
