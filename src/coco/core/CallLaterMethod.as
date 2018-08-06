@@ -14,6 +14,7 @@ package coco.core
 	 * @author coco
 	 * 
 	 */	
+	[ExcludeClass]
 	public class CallLaterMethod
 	{
 		public function CallLaterMethod()

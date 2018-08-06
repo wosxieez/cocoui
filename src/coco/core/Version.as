@@ -13,6 +13,11 @@ import coco.core.coco;
 //--------------------------------------------------------------------------------------------------------------------------
 
 /**
+ * Version 4.2.3
+ * 1 修复Scroller滚动位置置顶Bug
+ */
+
+/**
  * Version 4.2.2
  * 1 修复TileLayout rowCount Bug
  * 2 删除 性能监控项
@@ -134,4 +139,4 @@ import coco.core.coco;
  * 3 DefaultItemRenderer - label text clear when data is null
  */
 
-coco static const VERSION:String = "4.2.2";
+coco static const VERSION:String = "4.2.3";

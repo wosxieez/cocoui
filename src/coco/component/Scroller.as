@@ -159,7 +159,9 @@ package coco.component
 			{
 				if (viewport.width > width)
 				{
-					horizontalScrollPosition = minHorizontalScrollPosition = width;
+					// V4.2.2  方超发现一个Bug，就是滚动条的位置每次都会置前
+					// horizontalScrollPosition = minHorizontalScrollPosition = width;
+					minHorizontalScrollPosition = width;
 					maxHorizontalScrollPosition = viewport.width;
 					realHorizontalScrollEnabled = true;
 				}
@@ -168,7 +170,9 @@ package coco.component
 				
 				if (viewport.height > height)
 				{
-					verticalScrollPosition = minVerticalScrollPosition = height;
+					// V4.2.2  方超发现一个Bug，就是滚动条的位置每次都会置顶
+					// verticalScrollPosition = minVerticalScrollPosition = height; 
+					minVerticalScrollPosition = height;
 					maxVerticalScrollPosition = viewport.height;
 					realVerticalScrollEnabled = true;
 				}
