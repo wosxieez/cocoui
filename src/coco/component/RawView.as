@@ -103,6 +103,11 @@ package coco.component
 			return super.getChildIndex(child);
 		}
 		
+		public function setRawChildIndex(child:DisplayObject, index:int):void 
+		{
+			super.setChildIndex(child, index)
+		}
+		
 		public function removeAllRawChild():void
 		{
 			super.removeAllChild();
@@ -177,6 +182,11 @@ package coco.component
 				return realView.getChildIndex(child);
 			else
 				return -1;
+		}
+		
+		override public function setChildIndex(child:DisplayObject, index:int):void {
+			if (realView)
+				 realView.setChildIndex(child, index)
 		}
 		
 		override public function removeAllChild():void

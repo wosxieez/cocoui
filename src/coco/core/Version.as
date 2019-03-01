@@ -13,6 +13,11 @@ import coco.core.coco;
 //--------------------------------------------------------------------------------------------------------------------------
 
 /**
+ * Version 4.2.4
+ * 1 Application增加Raw支持
+ */
+
+/**
  * Version 4.2.3
  * 1 修复Scroller滚动位置置顶Bug
  */
@@ -139,4 +144,4 @@ import coco.core.coco;
  * 3 DefaultItemRenderer - label text clear when data is null
  */
 
-coco static const VERSION:String = "4.2.3";
+coco static const VERSION:String = "4.2.4";

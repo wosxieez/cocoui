@@ -231,6 +231,59 @@ package coco.core {
 			applicationContent.removeAllChild();
 		}
 		
+		
+		//---------------------------------------------------------------------------------------------------------------------                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 		//---------------------------------------------------------------------------------------------------------------------
+		//
+		// Raw Child
+		//
+		//---------------------------------------------------------------------------------------------------------------------
+		
+		public function addRawChild(child:DisplayObject):DisplayObject
+		{
+			return super.addChild(child);
+		}
+		
+		public function addRawChildAt(child:DisplayObject, index:int):DisplayObject
+		{
+			return super.addChildAt(child, index);
+		}
+		
+		public function removeRawChild(child:DisplayObject):DisplayObject
+		{
+			return super.removeChild(child);
+		}
+		
+		public function removeRawChildAt(index:int):DisplayObject
+		{
+			return super.removeChildAt(index);
+		}
+		
+		public function get numRawChildren():int
+		{
+			return super.numChildren;
+		}
+		
+		public function getRawChildAt(index:int):DisplayObject
+		{
+			return super.getChildAt(index);
+		}
+		
+		public function getRawChildByName(name:String):DisplayObject
+		{
+			return super.getChildByName(name);
+		}
+		
+		public function getRawChildIndex(child:DisplayObject):int
+		{
+			return super.getChildIndex(child);
+		}
+		
+		public function removeAllRawChild():void
+		{
+			super.removeAllChild();
+		}
+		
+		
 		//---------------------------------------------------------------------------------------------------------------------
 		//
 		// Call Later Code
