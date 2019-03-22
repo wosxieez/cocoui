@@ -114,7 +114,7 @@ package coco.core {
 		
 		private var _applicationContent:ApplicationContent;
 		
-		private function get applicationContent():ApplicationContent {
+		coco function get applicationContent():ApplicationContent {
 			if (!_applicationContent) {
 				_applicationContent = new ApplicationContent();
 				super.addChildAt(_applicationContent, 0);
