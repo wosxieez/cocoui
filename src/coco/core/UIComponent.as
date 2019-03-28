@@ -6,12 +6,11 @@
  */
 package coco.core
 {
-	import coco.event.UIEvent;
-	import coco.util.NameUtil;
-	
 	import flash.display.DisplayObject;
 	import flash.display.Sprite;
-	import flash.geom.Point;
+	
+	import coco.event.UIEvent;
+	import coco.util.NameUtil;
 	
 	use namespace coco;
 	
@@ -606,28 +605,6 @@ package coco.core
 		{
 			return NameUtil.displayObjectToString(this);
 		}
-		
-		/**
-		 * 再缩放的情况下保持全局坐标点统一 
-		 */		
-		override public function localToGlobal(point:Point):Point
-		{
-			var globalPoint:Point = super.localToGlobal(point);
-			globalPoint.x = globalPoint.x / Application.topApplication.scaleX;
-			globalPoint.y = globalPoint.y / Application.topApplication.scaleY;
-			return globalPoint;
-		}
-		
-		/**
-		 * 再缩放的情况下保持全局坐标点统一 
-		 */		
-		override public function globalToLocal(point:Point):Point
-		{
-			point.x = point.x * Application.topApplication.scaleX;
-			point.y = point.y * Application.topApplication.scaleY;
-			return super.globalToLocal(point);
-		}
-		
 		
 		//---------------------------------------------------------------------------------------------------------------------
 		//

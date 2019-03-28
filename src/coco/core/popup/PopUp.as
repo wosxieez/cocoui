@@ -7,6 +7,7 @@
 package coco.core.popup
 {
 	import flash.display.DisplayObject;
+	import flash.display.Stage;
 	import flash.geom.Point;
 	
 	import coco.core.UIComponent;
@@ -122,8 +123,9 @@ package coco.core.popup
 			if (childParent)
 			{
 				var popUpPoint:Point = childParent.localToGlobal(new Point(0, 0));
-				x = popUpPoint.x;
-				y = popUpPoint.y;
+				var popUpScale:Object = getScaleXY(childParent)
+				x = popUpPoint.x / popUpScale.scaleX;
+				y = popUpPoint.y / popUpScale.scaleY;
 				measuredWidth = childParent.width;
 				measuredHeight = childParent.height;
 			}
@@ -164,6 +166,17 @@ package coco.core.popup
 		{
 			invalidateSize();
 			invalidateDisplayList();
+		}
+		
+		private function getScaleXY(displayObject:DisplayObject):Object {
+			var scaleX:Number = 1, scaleY:Number = 1
+			while(displayObject && displayObject.parent && !(displayObject.parent is Stage)){
+				scaleX = scaleX * displayObject.parent.scaleX
+				scaleY = scaleY * displayObject.parent.scaleY
+				displayObject = displayObject.parent
+			}
+			
+			return {scaleX: scaleX, scaleY: scaleY}
 		}
 		
 	}
