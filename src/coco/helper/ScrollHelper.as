@@ -201,10 +201,10 @@ package coco.helper
 			moveMaxFrameCount = Math.ceil(60 * scrollView.application.applicationFPS / 1000);
 			
 			// 记录鼠标按下时当前页数
-			horizontalMaxPage = Math.ceil(scrollView.maxHorizontalScrollPosition / scrollView.minHorizontalScrollPosition);
-			mouseDownHorizontalPage = Math.ceil(horizontalScrollPositionOld / scrollView.minHorizontalScrollPosition);
-			verticalMaxPage = Math.ceil(scrollView.maxVerticalScrollPosition / scrollView.minVerticalScrollPosition);
-			mouseDownVerticalPage = Math.ceil(verticalScrollPositionOld / scrollView.minVerticalScrollPosition);
+			horizontalMaxPage = Math.round(scrollView.maxHorizontalScrollPosition / scrollView.minHorizontalScrollPosition);
+			mouseDownHorizontalPage = Math.round(horizontalScrollPositionOld / scrollView.minHorizontalScrollPosition);
+			verticalMaxPage = Math.round(scrollView.maxVerticalScrollPosition / scrollView.minVerticalScrollPosition);
+			mouseDownVerticalPage = Math.round(verticalScrollPositionOld / scrollView.minVerticalScrollPosition);
 			
 			//			debug("[ScrollHelper] Horizontal: " + mouseDownHorizontalPage + "/" + horizontalMaxPage + 
 			//				" Vertical: " + mouseDownVerticalPage + "/" + verticalMaxPage);
