@@ -30,9 +30,7 @@ package
 }
 ```
 
-### License
+### Screenshot
 
-COCOUI is [MIT licensed](./LICENSE).
-
-  ​
+[screenshot](https://raw.githubusercontent.com/wosxieez/cocoui/master/screenshot/screen1.jpg)
 
