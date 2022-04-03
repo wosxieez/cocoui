@@ -30,7 +30,3 @@ package
 }
 ```
 
-### Screenshot
-
-![screenshot](https://raw.githubusercontent.com/wosxieez/cocoui/master/screenshot/screen1.jpg)
-
